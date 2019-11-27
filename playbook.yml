@@ -1,0 +1,7 @@
+---
+
+- hosts: centOS
+  roles:
+    - docker-install-role
+    - flask-deploy-role
+    - nginx-deploy-role

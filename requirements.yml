@@ -1,0 +1,6 @@
+- src: https://github.com/daninoks/docker-install-role
+  name: docker-install-role
+- src: https://github.com/daninoks/flask-deploy-role
+  name: flask-deploy-role
+- src: https://github.com/daninoks/nginx-deploy-role
+  name: nginx-deploy-role

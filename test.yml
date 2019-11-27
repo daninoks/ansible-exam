@@ -1,0 +1,15 @@
+---
+
+- hosts: centOS
+  vars:
+    statuscode:
+  tasks:
+    - name: check connection (GET request) and collect http status code
+      uri:
+        url: http://localhost:8081
+        return_content: yes
+      register: statuscode
+    - debug:
+        var: statuscode.status
+    - name: sleep (just for jenkins correct output of above debug msg)
+      shell: "sleep 3"
